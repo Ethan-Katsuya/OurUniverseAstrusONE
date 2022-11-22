@@ -1,0 +1,169 @@
+/* corpo da pag */
+body{
+    
+    background-image: url(../images/backgroundstarnewbyme2.png);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+.conteudo{
+    position: inherit;
+    width: 75%;
+    margin: auto;
+    padding-top: 86px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.3em 1em #000;
+}
+/*fim corpo da pag */
+/* carrosel configs */
+.carrosel{
+    width: 75%;
+    margin: 0 auto 0;
+    box-shadow: 0 0.3em 1em #000;
+}
+.carousel-item :hover{
+    filter: blur(1px);
+    filter: brightness(150%);
+    transition: ease 0.5s;
+
+}
+/* fim carrosel configs */
+/* card configs */
+.card-text{
+    font-size: 1.2rem;
+    color: black;
+    font-style: arial;
+}
+.card {
+    box-shadow: 0 0.3em 1em #000;
+    cursor: pointer;
+    margin: 0 auto 0;
+    width: 75%;
+}
+.card a :hover{
+    filter: blur(1px);
+    filter: brightness(50%);
+    transition: ease-in-out 0.5s;
+}
+/* fim card configs */
+
+/*Nav-bar Configurações */
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.logo a:hover{
+    transform:scale(2);
+    box-shadow:
+    inset 0 0 128px 32px rgb(255, 255, 255), 0 0 20px 23px rgb(233, 227, 255);
+}
+.text-navbar{
+    color: rgb(165, 105, 228);
+    text-shadow: 5px 5px  rgb(0, 0, 0);
+    font-family: 'Silkscreen', cursive;
+}
+/*Configurações do módulo direito*/
+.modal-header>h6{
+    color: white;
+    padding-left: 10px;
+    
+}
+.modal{
+    width: 300px;
+}
+.modal-content{
+    width:300px
+}
+.modal-body{
+    background-image: url(../images/cuteuniverse3.png);
+}
+/*Fim Configurações do módulo direito*/
+.list-group a{
+    font-family: 'Silkscreen', cursive;
+    text-decoration: none;
+    color: black;
+}
+.list-group a:hover{
+    color: white;
+}
+.list-group :hover{
+    background-color: rgb(29,8,51);
+    color: white;
+}
+
+/* Fim Botões da navegação Configurações */
+/*Footer configs*/
+.text-footer1{
+    color: rgb(165, 105, 228);
+    text-shadow: 5px 5px  rgb(0, 0, 0);
+    font-family: 'Silkscreen', cursive;
+}
+.text-footer2{
+    color: rgb(248, 242, 255);
+    text-shadow: 5px 5px  rgb(0, 0, 0);
+    font-family: 'Silkscreen', cursive;
+}
+.container-footer{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    height: 30%;
+    width: 75%;
+    margin: auto;
+    padding-top: 20px;
+}
+/*fim Footer configs */
+
+/* protótipo responsividade */
+@media (max-width: 600px){
+    .conteudo{
+        width: 100%;
+    }
+    .carrosel{
+        width: 95%;
+    }
+    .container-footer{
+        width: 100%;
+        
+    }
+    .text-navbar h1{
+        font-size: 1.0rem;
+    
+    }
+    .text-footer1 h1{
+        font-size: 1.0rem;
+    
+    }
+    .text-footer2 h1{
+        font-size: 1.0rem;
+    
+    }
+    .notice{
+       width: 90%;
+       height: 230px;
+       margin: auto;
+       padding: 10px;
+    }
+    }
+    @media (max-width: 374px){
+        .text-navbar h1{
+            display: none;
+        }
+        .carousel-item h5{ display: none;
+
+        }
+        .carousel-item p{ display: none;
+    
+        }
+        } 
+          
+    @media (max-width: 900px){
+        .carousel-item h5{ font-size: 1.0rem;
+
+        }
+        .carousel-item p{ font-size: 0.6rem;
+    
+        }
+    }    
+/* fim protótipo responsividade */

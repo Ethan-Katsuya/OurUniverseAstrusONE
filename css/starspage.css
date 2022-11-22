@@ -1,0 +1,125 @@
+/*Nav-bar Configurações */
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.logo a:hover{
+    transform:scale(2);
+    box-shadow:
+    inset 0 0 128px 32px rgb(255, 255, 255), 0 0 20px 23px rgb(233, 227, 255);
+}
+.text-navbar{
+    color: rgb(165, 105, 228);
+    text-shadow: 5px 5px  rgb(0, 0, 0);
+    font-family: 'Silkscreen', cursive;
+}
+/*Configurações do módulo direito*/
+.modal-header>h6{
+    color: white;
+    padding-left: 10px;
+    
+}
+.modal{
+    width: 300px;
+}
+.modal-content{
+    width:300px
+}
+.modal-body{
+    background-image: url(../images/cuteuniverse3.png);
+}
+/*Fim Configurações do módulo direito*/
+.list-group a{
+    font-family: 'Silkscreen', cursive;
+    text-decoration: none;
+    color: black;
+}
+.list-group a:hover{
+    color: white;
+}
+.list-group :hover{
+    background-color: rgb(29,8,51);
+    color: white;
+}
+
+/* Fim Botões da navegação Configurações */
+.completesite{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../images/backgroundstarnewbyme.png);
+    background-position: center;
+    background-size: cover
+}
+
+/* Botões Luminosos Configurações */
+.luzes{
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 100%;
+    background-color: white;
+    cursor: pointer;
+    width: 7px;
+    height: 7px;
+    text-shadow: 0 0 32px white;
+    box-shadow:
+     inset 0 0 128px 60px rgb(255, 255, 255), 0 0 20px 20px rgb(185, 168, 245);
+     transition: 0.5s;
+     animation: animaluz 1s ease-in-out alternate infinite;
+}
+.luzes:hover{
+    transform:scale(1.2);
+    box-shadow:
+     inset 0 0 128px 32px rgb(255, 255, 255), 0 0 20px 23px rgb(233, 227, 255);
+     
+
+}
+.luzes a {
+    padding: 100%;
+}
+.Clique{
+    size: 15%;
+    margin-top: -40%;
+    color: white;
+    font-family: 'Silkscreen', cursive;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    text-shadow: 10 0 20px rgb(0, 0, 0);
+     animation: animaluz1 1s ease-in-out alternate infinite;
+}
+/*Animação dos botões*/
+@keyframes animaluz1 {
+    0%{
+        transform: scale(1);
+    }
+        
+    100%{
+        transform: scale(1.1);
+    }
+}
+@keyframes animaluz {
+    0%{
+        transform: scale(1);
+    }
+        
+    100%{
+        transform: scale(1.5);
+    }
+}
+/*Fim animação dos botões*/
+/* Fim Botões Luminosos */
+/* protótipo responsividade */
+@media (max-width: 600px){
+    .text-navbar h1{
+        font-size: 1.0rem;
+    }
+    }
+/* fim protótipo responsividade */

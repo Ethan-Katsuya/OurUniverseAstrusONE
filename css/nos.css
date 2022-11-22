@@ -1,0 +1,152 @@
+/* corpo da pag */
+body{
+    
+    background-image: url(../images/backgroundstarnewbyme2.png);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+.conteudo{
+    position: inherit;
+    width: 75%;
+    height: 900px;
+    margin: auto;
+    padding-top: 86px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.3em 1em #000;
+}
+/*fim corpo da pag */
+/* carrosel configs */
+.nos{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto ;
+    display: flex;
+    box-shadow: 0 0.3em 1em #000;
+    text-align: center;
+    align-items: center;
+    box-shadow:
+     inset 0 0 128px 32px rgb(243, 222, 174), 0 0 20px 23px rgb(255, 207, 124);
+     animation: animaluz1 1s ease-in-out alternate infinite;
+}
+.textonos{
+    text-align: center;
+    margin-left: 20px;
+}
+.textonos > h1{
+    font-size:0.6rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px   rgb(243, 222, 174);
+    font-family: 'Silkscreen', cursive;
+    
+
+}
+
+/*Nav-bar Configurações */
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.logo a:hover{
+    transform:scale(2);
+    box-shadow:
+    inset 0 0 128px 32px rgb(255, 255, 255), 0 0 20px 23px rgb(233, 227, 255);
+}
+.text-navbar{
+    color: rgb(165, 105, 228);
+    text-shadow: 5px 5px  rgb(0, 0, 0);
+    font-family: 'Silkscreen', cursive;
+}
+/*Configurações do módulo direito*/
+.modal-header>h6{
+    color: white;
+    padding-left: 10px;
+    
+}
+.modal{
+    width: 300px;
+}
+.modal-content{
+    width:300px
+}
+.modal-body{
+    background-image: url(../images/cuteuniverse3.png);
+}
+/*Fim Configurações do módulo direito*/
+.list-group a{
+    font-family: 'Silkscreen', cursive;
+    text-decoration: none;
+    color: black;
+}
+.list-group a:hover{
+    color: white;
+}
+.list-group :hover{
+    background-color: rgb(29,8,51);
+    color: white;
+}
+
+/* Fim Botões da navegação Configurações */
+
+
+/* protótipo responsividade */
+@media (min-width: 600px){
+
+}
+@media (max-width: 600px){
+    .conteudo{
+        box-shadow:none;
+    }
+    .text-navbar h1{
+        font-size: 1.0rem;
+    
+    }
+    .text-footer1 h1{
+        font-size: 1.0rem;
+    
+    }
+    .text-footer2 h1{
+        font-size: 1.0rem;
+    
+    }
+    .notice{
+       width: 90%;
+       height: 230px;
+       margin: auto;
+       padding: 10px;
+    }
+    }
+    @media (max-width: 374px){
+        .text-navbar h1{
+            display: none;
+        }
+        .carousel-item h5{ display: none;
+
+        }
+        .carousel-item p{ display: none;
+    
+        }
+        } 
+          
+    @media (max-width: 900px){
+        .carousel-item h5{ font-size: 1.0rem;
+
+        }
+        .carousel-item p{ font-size: 0.6rem;
+    
+        }
+    }    
+/* fim protótipo responsividade */
+@keyframes animaluz1 {
+    0%{
+        transform: scale(1);
+    }
+        
+    100%{
+        transform: scale(1.1);
+    }
+}
+
